@@ -168,13 +168,26 @@ public:
 		do {
 			
 			/*wyswietlanie:*/
-			cout << "1 - poprzedni element\n2 - nastepny element\n3 - dodaj na poczatek\n4 - dodaj na koniec\n5 - dodaj na konkretne miejsce\n6 - usun z poczatku\n7 - usun z konca\n8 - usun z konkretnego indexu\n0 - wyjdz\n\n\n\n"; \
-
-			cout << "\n\nwartosc: "; 
-				if (wybrany->poprzedni != nullptr) { cout << wybrany->poprzedni->dane; } 
+			cout << "1 - poprzedni element\n2 - nastepny element\n3 - dodaj na poczatek\n4 - dodaj na koniec\n5 - dodaj na konkretne miejsce\n6 - usun z poczatku\n7 - usun z konca\n8 - usun z konkretnego indexu\n9 - wyswietl liste od poczatku\n10 - wyswietl liste od konca\n0 - wyjdz\n\n\n\n"; \
+			if(komenda != 9 && komenda != 10)
+			{
+				cout << "\n\nwartosc: ";
+				if (wybrany->poprzedni != nullptr) { cout << wybrany->poprzedni->dane; }
 				if (wybrany != nullptr) { cout << " -> "; if (ilosc == 0) cout << "null"; else cout << wybrany->dane; cout << " <- "; }
 				if (wybrany->nastepny != nullptr) { cout << wybrany->nastepny->dane; }
-			cout << "\nindex: " << index << "\n\n\n" << error << "\n\n";
+				cout << "\nindex: " << index << "\n\n\n" << error << "\n\n";
+			}
+			else if(komenda == 9) {
+				wyswietl_od_poczatku();
+			}
+			else if (komenda == 10) {
+				wyswietl_od_konca();
+			}
+			
+			/*	*/
+
+
+
 			error = "";
 			cin >> komenda;
 			int a = 0, ind = 0;
@@ -236,9 +249,6 @@ public:
 					usun_z_konca();
 				}
 				else { wybrany = wybrany->poprzedni; usun_z_indexu(index); index--; }
-				
-				
-
 				break;
 			}
 			system("cls");
@@ -251,5 +261,5 @@ int main()
 	ListaDwukierunkowa lista;
 
 	lista.poruszanie_sie_po_liscie();
-	//lista.wyswietl_od_konca();
+
 }
