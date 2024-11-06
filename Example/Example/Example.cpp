@@ -3,9 +3,11 @@
 using namespace std;
 
 struct Wezel {
-	int dane = 0;
-	Wezel* nastepny = nullptr;
-	Wezel* poprzedni = nullptr;
+	int dane;
+	Wezel* nastepny;
+	Wezel* poprzedni;
+
+	Wezel() : dane(NULL), poprzedni(nullptr), nastepny(nullptr) {};
 };
 
 class ListaDwukierunkowa {
@@ -17,7 +19,7 @@ public:
 	ListaDwukierunkowa() : poczatek(nullptr), koniec(nullptr), ilosc(0) {}
 
 	/**
-	
+
 	wyświetlanie listy
 
 	**/
@@ -51,9 +53,9 @@ public:
 	}
 
 	/*
-	
+
 	Dodawanie elementów
-	
+
 	*/
 
 	Wezel* dodaj_na_poczatek(int wartosc) {
@@ -95,7 +97,7 @@ public:
 	@Brief walidacja dodana!!
 	*/
 	Wezel* dodaj_na_index(int wartosc, int index) {
-		if (index > 0 && index < ilosc) {
+		if (index > 0 && index < ilosc - 1) {
 			Wezel* nowyWezel = new Wezel;
 			Wezel* wskaznik = poczatek;
 			for (int i = 0; i < index - 1; i++)
@@ -111,39 +113,51 @@ public:
 			return nowyWezel;
 		}
 		else if (index == 0) dodaj_na_poczatek(wartosc);
-		else if (index == ilosc) dodaj_na_koniec(wartosc);
+		else if (index == ilosc - 1) dodaj_na_koniec(wartosc);
 		else cout << "Index poza listą";
 	}
 
 	/*
-	
+
 	Usuwanie elementów
 
 	*/
 
 	void usun_z_poczatku() {
-		if (!poczatek) {
+		if (ilosc == 0) {
 			cout << "brak elementow\n";
 		}
 		else
-		{
-			Wezel* chwilowy = poczatek;
-			poczatek = poczatek->nastepny;
-			poczatek->poprzedni = nullptr;
-			delete chwilowy;
-		}
+			if (ilosc >= 2)
+			{
+				Wezel* chwilowy = poczatek;
+				poczatek = poczatek->nastepny;
+				poczatek->poprzedni = nullptr;
+				delete chwilowy;
+			}
+			else {
+				delete poczatek;
+				koniec = nullptr;
+				poczatek = nullptr;
+			}
+
 		ilosc--;
 	}
 	void usun_z_konca() {
-		if (!koniec) {
+		if (ilosc == 0) {
 			cout << "brak elementow\n";
 		}
-		else
+		else if (ilosc > 1)
 		{
 			Wezel* chwilowy = koniec;
 			koniec = koniec->poprzedni;
 			koniec->nastepny = nullptr;
 			delete chwilowy;
+		}
+		else if (ilosc == 1) {
+			delete koniec;
+			poczatek = nullptr;
+			koniec = nullptr;
 		}
 		ilosc--;
 	}
@@ -153,113 +167,113 @@ public:
 			for (int i = 0; i < index; i++) {
 				wskaznik = wskaznik->nastepny;
 			}
-			Wezel* pomocniczy = wskaznik->poprzedni;
-			pomocniczy->nastepny = wskaznik->nastepny;
-			wskaznik->nastepny->poprzedni = pomocniczy;
+			wskaznik->poprzedni->nastepny = wskaznik->nastepny;
+			wskaznik->nastepny->poprzedni = wskaznik->poprzedni;
 			delete wskaznik;
+			ilosc--;
 		}
+		else if (index == 0) usun_z_poczatku();
+		else if (index == ilosc - 1) usun_z_konca();
+		else cout << "Index poza listą";
+
 	}
-	void poruszanie_sie_po_liscie() {
-		int index = 0;
-		int komenda = 0;
-		string error = "";
-		Wezel* wybrany = new Wezel;
-		if (poczatek != nullptr) wybrany = poczatek;
+
+	string wezel(int index) {
+		if (poczatek == nullptr) return "";
+		if (index == -1) return "";
+		Wezel* wskaznik = poczatek; 
+		for (int i = 0; i < index; i++)
+		{
+			if (wskaznik->nastepny != nullptr) wskaznik = wskaznik->nastepny;
+			else {
+				wskaznik = nullptr;
+				return "";
+			}
+		}
+		if (wskaznik != nullptr) return to_string(wskaznik->dane);
+
+	}
+	void Widok() {
+
+		int wybrany_index = 0, komenda = 0, wartosc = 0, wartosc2 = 0, widok = 0;
+
 		do {
+
+			system("cls");
+
+			cout << "1 - poprzedni element\n2 - nastepny element\n3 - dodaj na poczatek\n4 - dodaj na koniec\n5 - dodaj na konkretne miejsce\n6 - usun z poczatku\n7 - usun z konca\n8 - usun z konkretnego indexu\n9 - wyswietl liste od poczatku\n10 - wyswietl liste od konca\n0 - wyjdz\n\n";
+
+			if (widok == 0) {
+				if (wezel(wybrany_index - 1) != "") cout << wezel(wybrany_index - 1); else  cout << "#";
+				;			cout << " -> " << wezel(wybrany_index) << " <- ";
+				if (wezel(wybrany_index + 1) != "") cout << wezel(wybrany_index + 1); else  cout << "#";
+
+				cout << " \nindex: " << wybrany_index << "\n\nkomenda: ";
+			}
+			else if (widok == 1) wyswietl_od_poczatku();
+			else if (widok == 2) wyswietl_od_konca();
 			
-			/*wyswietlanie:*/
-			cout << "1 - poprzedni element\n2 - nastepny element\n3 - dodaj na poczatek\n4 - dodaj na koniec\n5 - dodaj na konkretne miejsce\n6 - usun z poczatku\n7 - usun z konca\n8 - usun z konkretnego indexu\n9 - wyswietl liste od poczatku\n10 - wyswietl liste od konca\n0 - wyjdz\n\n\n\n"; \
-			if(komenda != 9 && komenda != 10)
-			{
-				cout << "\n\nwartosc: ";
-				if (wybrany->poprzedni != nullptr) { cout << wybrany->poprzedni->dane; }
-				if (wybrany != nullptr) { cout << " -> "; if (ilosc == 0) cout << "null"; else cout << wybrany->dane; cout << " <- "; }
-				if (wybrany->nastepny != nullptr) { cout << wybrany->nastepny->dane; }
-				cout << "\nindex: " << index << "\n\n\n" << error << "\n\n";
-			}
-			else if(komenda == 9) {
-				wyswietl_od_poczatku();
-			}
-			else if (komenda == 10) {
-				wyswietl_od_konca();
-			}
-			
-			/*	*/
 
-
-
-			error = "";
 			cin >> komenda;
-			int a = 0, ind = 0;
+
+
 			switch (komenda)
 			{
 			case 1:
-				if (wybrany->poprzedni != nullptr) {
-					wybrany = wybrany->poprzedni;
-					index--;
-				}
+				if(wybrany_index > 0) wybrany_index--;
 				break;
 			case 2:
-				if (wybrany->nastepny != nullptr) {
-					wybrany = wybrany->nastepny;
-					index++;
-				}
+				if(wybrany_index < ilosc - 1) wybrany_index++;;
 				break;
 			case 3:
 				cout << "Podaj wartosc: ";
-				cin >> a;
-				if (ilosc == 0) wybrany = dodaj_na_poczatek(a);
-				else { dodaj_na_poczatek(a); index++; }
+				cin >> wartosc;
+				dodaj_na_poczatek(wartosc);
 				break;
 			case 4:
 				cout << "Podaj wartosc: ";
-				cin >> a;
-				if (ilosc == 0) wybrany = dodaj_na_koniec(a);
-				else { dodaj_na_koniec(a); }
+				cin >> wartosc;
+				dodaj_na_koniec(wartosc);
 				break;
 			case 5:
-				cout << "Podaj wartosc: ";
-				cin >> a;
 				cout << "Podaj index: ";
-				cin >> ind;
-				if (ind >= 0 && ind <= ilosc) {
-					wybrany = dodaj_na_index(a, ind);
-					index = ind;
-				} 
-				else error = "Index poza lista";
-				
+				cin >> wartosc2;
+
+				cout << "Podaj wartosc: ";
+				cin >> wartosc;
+
+				dodaj_na_index(wartosc, wartosc2);
 				break;
 			case 6:
-				if (wybrany == poczatek) { wybrany = poczatek->nastepny; index++; };
-				usun_z_poczatku();
-				index--;
+				if(ilosc > 0) usun_z_poczatku();
 				break;
 			case 7:
-				if (wybrany == koniec) { wybrany = koniec->poprzedni; index--; }
-				usun_z_konca();
+				if (ilosc > 0) usun_z_konca();
 				break;
 			case 8:
-				if (wybrany == poczatek) { 
-					if (wybrany == poczatek) { wybrany = poczatek->nastepny; index++; };
-					usun_z_poczatku();
-					index--;
-				}
-				else if (wybrany == koniec) { 
-					if (wybrany == koniec) { wybrany = koniec->poprzedni; index--; }
-					usun_z_konca();
-				}
-				else { wybrany = wybrany->poprzedni; usun_z_indexu(index); index--; }
+				cout << "Podaj index: ";
+				cin >> wartosc2;
+
+				usun_z_indexu(wartosc2);
+				break;
+			case 9:
+				widok = 1;
+				break;
+			case 10:
+				widok = 2;
+				break;
+			case 11:
+				widok = 0;
 				break;
 			}
-			system("cls");
-		} while (komenda != 0);
+
+		} while (komenda != 0 && ilosc != 0);
 	}
 };
-
+	
 int main()
 {
 	ListaDwukierunkowa lista;
-
-	lista.poruszanie_sie_po_liscie();
+	lista.Widok();
 
 }
