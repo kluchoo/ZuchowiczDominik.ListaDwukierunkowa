@@ -3,75 +3,75 @@ using namespace std;
 #include <string>
 
 /**
- * @brief Struktura reprezentuj¹ca pojedynczy wêze³ listy dwukierunkowej.
+ * @brief Struktura reprezentujaca pojedynczy wezel listy dwukierunkowej.
  *
- * Ka¿dy wêze³ zawiera dane oraz wskaŸniki na nastêpny i poprzedni element listy.
+ * Kazdy wezel zawiera dane oraz wskazniki na nastepny i poprzedni element listy.
  */
 struct Wezel {
-    int dane;              /**< Wartoœæ przechowywana w wêŸle. */
-    Wezel* nastepny;       /**< WskaŸnik na nastêpny element listy. */
-    Wezel* poprzedni;      /**< WskaŸnik na poprzedni element listy. */
+    int dane;              /**< Wartosc przechowywana w wezle. */
+    Wezel* nastepny;       /**< Wskaznik na nastepny element listy. */
+    Wezel* poprzedni;      /**< Wskaznik na poprzedni element listy. */
 
     /**
-     * @brief Konstruktor domyœlny inicjalizuj¹cy pola wêz³a.
+     * @brief Konstruktor domyslny inicjalizujacy pola wezla.
      */
     Wezel() : dane(NULL), poprzedni(nullptr), nastepny(nullptr) {}
 };
 
 /**
- * @brief Klasa reprezentuj¹ca listê dwukierunkow¹.
+ * @brief Klasa reprezentujaca liste dwukierunkowa.
  *
- * Zapewnia metody do dodawania, usuwania i wyœwietlania elementów listy.
+ * Zapewnia metody do dodawania, usuwania i wyswietlania elementow listy.
  */
 class ListaDwukierunkowa {
 private:
-    Wezel* poczatek;   /**< WskaŸnik na pierwszy element listy. */
-    Wezel* koniec;     /**< WskaŸnik na ostatni element listy. */
-    int ilosc;         /**< Liczba elementów w liœcie. */
+    Wezel* poczatek;   /**< Wskaznik na pierwszy element listy. */
+    Wezel* koniec;     /**< Wskaznik na ostatni element listy. */
+    int ilosc;         /**< Liczba elementow w liscie. */
 
 public:
     /**
-     * @brief Konstruktor domyœlny inicjalizuj¹cy pust¹ listê.
+     * @brief Konstruktor domyslny inicjalizujacy pusta liste.
      */
-    ListaDwukierunkowa() : poczatek(nullptr), koniec(nullptr), ilosc(0) {}
+    ListaDwukierunkowa();
 
     /**
-     * @brief Destruktor czyszcz¹cy pamiêæ przy usuwaniu listy.
+     * @brief Destruktor czyszczacy pamiec przy usuwaniu listy.
      */
-    ~ListaDwukierunkowa() {}
+    ~ListaDwukierunkowa();
 
     /**
-     * @brief Wyœwietla elementy listy od pocz¹tku.
+     * @brief Wyswietla elementy listy od poczatku.
      */
     void wyswietl_od_poczatku();
 
     /**
-     * @brief Wyœwietla elementy listy od koñca.
+     * @brief Wyswietla elementy listy od konca.
      */
     void wyswietl_od_konca();
 
     /**
-     * @brief Dodaje nowy element na pocz¹tek listy.
+     * @brief Dodaje nowy element na poczatek listy.
      *
-     * @param wartosc Wartoœæ do dodania na pocz¹tek listy.
-     * @return WskaŸnik do nowo dodanego wêz³a.
+     * @param wartosc Wartosc do dodania na poczatek listy.
+     * @return Wskaznik do nowo dodanego wezla.
      */
     Wezel* dodaj_na_poczatek(int wartosc);
 
     /**
      * @brief Dodaje nowy element na koniec listy.
      *
-     * @param wartosc Wartoœæ do dodania na koniec listy.
-     * @return WskaŸnik do nowo dodanego wêz³a.
+     * @param wartosc Wartosc do dodania na koniec listy.
+     * @return Wskaznik do nowo dodanego wezla.
      */
     Wezel* dodaj_na_koniec(int wartosc);
 
     /**
      * @brief Dodaje nowy element na podanym indeksie.
      *
-     * @param wartosc Wartoœæ do dodania.
-     * @param index Indeks, na którym nale¿y dodaæ nowy element.
-     * @return WskaŸnik do nowo dodanego wêz³a, lub nullptr jeœli indeks jest nieprawid³owy.
+     * @param wartosc Wartosc do dodania.
+     * @param index Indeks, na ktorym nalezy dodac nowy element.
+     * @return Wskaznik do nowo dodanego wezla, lub nullptr jesli indeks jest nieprawidlowy.
      */
     Wezel* dodaj_na_index(int wartosc, int index);
 
@@ -88,22 +88,24 @@ public:
     /**
      * @brief Usuwa element na podanym indeksie.
      *
-     * @param index Indeks elementu do usuniêcia.
+     * @param index Indeks elementu do usuniecia.
      */
     void usun_z_indexu(int index);
 
     /**
-     * @brief Zwraca wartoœæ wêz³a na podanym indeksie jako string.
+     * @brief Zwraca wartosc wezla na podanym indeksie jako string.
      *
-     * @param index Indeks wêz³a, którego wartoœæ ma zostaæ zwrócona.
-     * @return Wartoœæ wêz³a jako string, lub pusty string jeœli indeks jest nieprawid³owy.
+     * @param index Indeks wezla, ktorego wartosc ma zostac zwrocona.
+     * @return Wartosc wezla jako string, lub pusty string jesli indeks jest nieprawidlowy.
      */
     string wezel(int index);
 
     /**
-     * @brief Interfejs konsolowy do zarz¹dzania list¹.
+     * @brief Interfejs konsolowy do zarzadzania lista.
      *
-     * Umo¿liwia u¿ytkownikowi wykonywanie operacji na liœcie, takich jak dodawanie, usuwanie, czy wyœwietlanie elementów.
+     * Umozliwia uzytkownikowi wykonywanie operacji na liscie, takich jak dodawanie, usuwanie, czy wyswietlanie elementow.
      */
     void Widok();
+
+    void WyczyscListe();
 };

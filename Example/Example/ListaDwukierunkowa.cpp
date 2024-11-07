@@ -4,9 +4,19 @@
 
 
 /**
-* @brief Wyœwietla elementy listy od pocz¹tku.
+	* @brief Konstruktor domyslny inicjalizujacy pusta liste.
+	*/
+ListaDwukierunkowa::ListaDwukierunkowa() : poczatek(nullptr), koniec(nullptr), ilosc(0) {}
+
+/**
+ * @brief Destruktor czyszczacy pamiec przy usuwaniu listy.
+ */
+ListaDwukierunkowa::~ListaDwukierunkowa() { WyczyscListe(); }
+
+/**
+* @brief Wyswietla elementy listy od poczatku.
 *
-* Wypisuje ka¿dy element listy zaczynaj¹c od pierwszego elementu.
+* Wypisuje kazdy element listy zaczynajac od pierwszego elementu.
 */
 
 	void ListaDwukierunkowa::wyswietl_od_poczatku() {
@@ -24,9 +34,9 @@
 	}
 
 	/**
- * @brief Wyœwietla elementy listy od koñca.
+ * @brief Wyswietla elementy listy od konca.
  *
- * Wypisuje ka¿dy element listy zaczynaj¹c od ostatniego elementu.
+ * Wypisuje kazdy element listy zaczynajac od ostatniego elementu.
  */
 
 	void ListaDwukierunkowa::wyswietl_od_konca() {
@@ -44,10 +54,10 @@
 	}
 
 	/**
- * @brief Dodaje nowy element na pocz¹tek listy.
+ * @brief Dodaje nowy element na poczatek listy.
  *
- * @param wartosc Wartoœæ do dodania na pocz¹tek listy.
- * @return WskaŸnik do nowo dodanego wêz³a.
+ * @param wartosc Wartosc do dodania na poczatek listy.
+ * @return Wskaznik do nowo dodanego wezla.
  */
 
 	Wezel* ListaDwukierunkowa::dodaj_na_poczatek(int wartosc) {
@@ -71,8 +81,8 @@
 	/**
  * @brief Dodaje nowy element na koniec listy.
  *
- * @param wartosc Wartoœæ do dodania na koniec listy.
- * @return WskaŸnik do nowo dodanego wêz³a.
+ * @param wartosc Wartosc do dodania na koniec listy.
+ * @return Wskaznik do nowo dodanego wezla.
  */
 
 	Wezel* ListaDwukierunkowa::dodaj_na_koniec(int wartosc) {
@@ -97,9 +107,9 @@
 	/**
 	 * @brief Dodaje nowy element na podanym indeksie.
 	 *
-	 * @param wartosc Wartoœæ do dodania.
-	 * @param index Indeks, na którym nale¿y dodaæ nowy element.
-	 * @return WskaŸnik do nowo dodanego wêz³a, lub nullptr jeœli indeks jest nieprawid³owy.
+	 * @param wartosc Wartosc do dodania.
+	 * @param index Indeks, na ktorym nalezy dodac nowy element.
+	 * @return Wskaznik do nowo dodanego wezla, lub nullptr jesli indeks jest nieprawidlowy.
 	 */
 
 	Wezel* ListaDwukierunkowa::dodaj_na_index(int wartosc, int index) {
@@ -120,7 +130,7 @@
 		}
 		else if (index == 0) dodaj_na_poczatek(wartosc);
 		else if (index == ilosc - 1) dodaj_na_koniec(wartosc);
-		else cout << "Index poza list¹";
+		else cout << "Index poza lista";
 	}
 
 	/**
@@ -172,7 +182,7 @@
 	/**
  * @brief Usuwa element na podanym indeksie.
  *
- * @param index Indeks elementu do usuniêcia.
+ * @param index Indeks elementu do usuniecia.
  */
 
 	void ListaDwukierunkowa::usun_z_indexu(int index) {
@@ -188,15 +198,15 @@
 		}
 		else if (index == 0) usun_z_poczatku();
 		else if (index == ilosc - 1) usun_z_konca();
-		else cout << "Index poza list¹";
+		else cout << "Index poza lista";
 
 	}
 
 	/**
- * @brief Zwraca wartoœæ wêz³a na podanym indeksie jako string.
+ * @brief Zwraca wartosc wezla na podanym indeksie jako string.
  *
- * @param index Indeks wêz³a, którego wartoœæ ma zostaæ zwrócona.
- * @return Wartoœæ wêz³a jako string, lub pusty string jeœli indeks jest nieprawid³owy.
+ * @param index Indeks wezla, ktorego wartosc ma zostac zwrocona.
+ * @return Wartosc wezla jako string, lub pusty string jesli indeks jest nieprawidlowy.
  */
 
 	string ListaDwukierunkowa::wezel(int index) {
@@ -214,11 +224,16 @@
 		if (wskaznik != nullptr) return to_string(wskaznik->dane);
 
 	}
+	void ListaDwukierunkowa::WyczyscListe() {
+		do {
+			usun_z_poczatku();
+		} while (poczatek != nullptr);
+	}
 
 	/**
- * @brief Interfejs konsolowy do zarz¹dzania list¹.
+ * @brief Interfejs konsolowy do zarzadzania lista.
  *
- * Umo¿liwia u¿ytkownikowi wykonywanie operacji na liœcie, takich jak dodawanie, usuwanie, czy wyœwietlanie elementów.
+ * Umozliwia uzytkownikowi wykonywanie operacji na liscie, takich jak dodawanie, usuwanie, czy wyswietlanie elementow.
  */
 
 	void ListaDwukierunkowa::Widok() {
@@ -294,6 +309,8 @@
 			case 11:
 				widok = 0;
 				break;
+			case 12:
+				WyczyscListe();
 			}
 
 		} while (komenda != 0 && ilosc != 0);

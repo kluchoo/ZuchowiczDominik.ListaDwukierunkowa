@@ -1,9 +1,100 @@
 \begin{theindex}
 
-  \item {ListaDwukierunkowa}, \hyperpage{3}
+  \item {\texorpdfstring{$\sim$}{\string~}ListaDwukierunkowa}
+    \subitem {ListaDwukierunkowa}, \hyperpage{3}
 
   \indexspace
 
-  \item {Wezel}, \hyperpage{3}
+  \item {dane}
+    \subitem {Wezel}, \hyperpage{7}
+  \item {dodaj\_na\_index}
+    \subitem {ListaDwukierunkowa}, \hyperpage{3}
+  \item {dodaj\_na\_koniec}
+    \subitem {ListaDwukierunkowa}, \hyperpage{3}
+  \item {dodaj\_na\_poczatek}
+    \subitem {ListaDwukierunkowa}, \hyperpage{4}
+
+  \indexspace
+
+  \item {E:/ProgramowanieZaawansowane/ZuchowiczDominik.ListaDwukierunkowa/Example/Example/Example.cpp}, 
+		\hyperpage{8}
+  \item {E:/ProgramowanieZaawansowane/ZuchowiczDominik.ListaDwukierunkowa/Example/Example/ListaDwukierunkowa.cpp}, 
+		\hyperpage{9}
+  \item {E:/ProgramowanieZaawansowane/ZuchowiczDominik.ListaDwukierunkowa/Example/Example/ListaDwukierunkowa.h}, 
+		\hyperpage{12}
+  \item {Example.cpp}
+    \subitem {main}, \hyperpage{8}
+
+  \indexspace
+
+  \item {ilosc}
+    \subitem {ListaDwukierunkowa}, \hyperpage{6}
+
+  \indexspace
+
+  \item {koniec}
+    \subitem {ListaDwukierunkowa}, \hyperpage{6}
+
+  \indexspace
+
+  \item {ListaDwukierunkowa}, \hyperpage{2}
+    \subitem {\texorpdfstring{$\sim$}{\string~}ListaDwukierunkowa}, 
+		\hyperpage{3}
+    \subitem {dodaj\_na\_index}, \hyperpage{3}
+    \subitem {dodaj\_na\_koniec}, \hyperpage{3}
+    \subitem {dodaj\_na\_poczatek}, \hyperpage{4}
+    \subitem {ilosc}, \hyperpage{6}
+    \subitem {koniec}, \hyperpage{6}
+    \subitem {ListaDwukierunkowa}, \hyperpage{3}
+    \subitem {poczatek}, \hyperpage{6}
+    \subitem {usun\_z\_indexu}, \hyperpage{4}
+    \subitem {usun\_z\_konca}, \hyperpage{4}
+    \subitem {usun\_z\_poczatku}, \hyperpage{4}
+    \subitem {wezel}, \hyperpage{5}
+    \subitem {Widok}, \hyperpage{5}
+    \subitem {wyswietl\_od\_konca}, \hyperpage{5}
+    \subitem {wyswietl\_od\_poczatku}, \hyperpage{5}
+
+  \indexspace
+
+  \item {main}
+    \subitem {Example.cpp}, \hyperpage{8}
+
+  \indexspace
+
+  \item {nastepny}
+    \subitem {Wezel}, \hyperpage{7}
+
+  \indexspace
+
+  \item {poczatek}
+    \subitem {ListaDwukierunkowa}, \hyperpage{6}
+  \item {poprzedni}
+    \subitem {Wezel}, \hyperpage{7}
+
+  \indexspace
+
+  \item {usun\_z\_indexu}
+    \subitem {ListaDwukierunkowa}, \hyperpage{4}
+  \item {usun\_z\_konca}
+    \subitem {ListaDwukierunkowa}, \hyperpage{4}
+  \item {usun\_z\_poczatku}
+    \subitem {ListaDwukierunkowa}, \hyperpage{4}
+
+  \indexspace
+
+  \item {Wezel}, \hyperpage{6}
+    \subitem {dane}, \hyperpage{7}
+    \subitem {nastepny}, \hyperpage{7}
+    \subitem {poprzedni}, \hyperpage{7}
+    \subitem {Wezel}, \hyperpage{7}
+  \item {wezel}
+    \subitem {ListaDwukierunkowa}, \hyperpage{5}
+  \item {Widok}
+    \subitem {ListaDwukierunkowa}, \hyperpage{5}
+  \item {wyswietl\_od\_konca}
+    \subitem {ListaDwukierunkowa}, \hyperpage{5}
+  \item {wyswietl\_od\_poczatku}
+    \subitem {ListaDwukierunkowa}, \hyperpage{5}
 
 \end{theindex}

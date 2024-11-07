@@ -1,5 +1,308 @@
-\doxysection{Lista\+Dwukierunkowa Class Reference}
+\doxysubsection{Lista\+Dwukierunkowa Class Reference}
 \hypertarget{class_lista_dwukierunkowa}{}\label{class_lista_dwukierunkowa}\index{ListaDwukierunkowa@{ListaDwukierunkowa}}
 
 
-Collaboration diagram for Lista\+Dwukierunkowa\+:
+Klasa reprezentujaca liste dwukierunkowa.  
+
+
+
+
+{\ttfamily \#include $<$Lista\+Dwukierunkowa.\+h$>$}
+
+\doxysubsubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lista_dwukierunkowa_a5171fe8d7617c75381a2021fc73dfd2d}{Lista\+Dwukierunkowa}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny inicjalizujacy pusta liste. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_dwukierunkowa_a55ced6c1f79ed8ca34b3f406eeafd547}{\texorpdfstring{$\sim$}{\string~}\+Lista\+Dwukierunkowa}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor czyszczacy pamiec przy usuwaniu listy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lista_dwukierunkowa_a711733314b34696a56148626b0636bc8}{wyswietl\+\_\+od\+\_\+poczatku}} ()
+\begin{DoxyCompactList}\small\item\em Wyswietla elementy listy od poczatku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lista_dwukierunkowa_af5cf0600d86529d33489cc30f60b8b02}{wyswietl\+\_\+od\+\_\+konca}} ()
+\begin{DoxyCompactList}\small\item\em Wyswietla elementy listy od konca. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_wezel}{Wezel}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_lista_dwukierunkowa_a2e7e53b547f7898469fd97ff06420cc6}{dodaj\+\_\+na\+\_\+poczatek}} (int wartosc)
+\begin{DoxyCompactList}\small\item\em Dodaje nowy element na poczatek listy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_wezel}{Wezel}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_lista_dwukierunkowa_a67c0c590cf47602a6a47603173752488}{dodaj\+\_\+na\+\_\+koniec}} (int wartosc)
+\begin{DoxyCompactList}\small\item\em Dodaje nowy element na koniec listy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_wezel}{Wezel}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_lista_dwukierunkowa_a13259af49445d0e841b7db045a65606e}{dodaj\+\_\+na\+\_\+index}} (int wartosc, int index)
+\begin{DoxyCompactList}\small\item\em Dodaje nowy element na podanym indeksie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lista_dwukierunkowa_acab869b079247a390aabedb5f05a7944}{usun\+\_\+z\+\_\+poczatku}} ()
+\begin{DoxyCompactList}\small\item\em Usuwa pierwszy element z listy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lista_dwukierunkowa_a8f743500d8535b64500a2c4ba4aec61e}{usun\+\_\+z\+\_\+konca}} ()
+\begin{DoxyCompactList}\small\item\em Usuwa ostatni element z listy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lista_dwukierunkowa_aa8d52ac4714e7d8b0e67b359d04362a7}{usun\+\_\+z\+\_\+indexu}} (int index)
+\begin{DoxyCompactList}\small\item\em Usuwa element na podanym indeksie. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_lista_dwukierunkowa_ac7a176c913e54b887d7555a0a4a4bdd0}{wezel}} (int index)
+\begin{DoxyCompactList}\small\item\em Zwraca wartosc wezla na podanym indeksie jako string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lista_dwukierunkowa_a07648c95a7fcbcbc3aaaea1121412da2}{Widok}} ()
+\begin{DoxyCompactList}\small\item\em Interfejs konsolowy do zarzadzania lista. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_wezel}{Wezel}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_lista_dwukierunkowa_a679545eec04e967ddba12353416f8ec6}{poczatek}}
+\item 
+\mbox{\hyperlink{struct_wezel}{Wezel}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_lista_dwukierunkowa_a6c2cd8ecc2f0160e7ef5fc7a80278afe}{koniec}}
+\item 
+int \mbox{\hyperlink{class_lista_dwukierunkowa_a8c12d465b386466c0797f6d65d664ae2}{ilosc}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Detailed Description}
+Klasa reprezentujaca liste dwukierunkowa. 
+
+Zapewnia metody do dodawania, usuwania i wyswietlania elementow listy. 
+
+Definition at line \mbox{\hyperlink{_lista_dwukierunkowa_8h_source_l00026}{26}} of file \mbox{\hyperlink{_lista_dwukierunkowa_8h_source}{Lista\+Dwukierunkowa.\+h}}.
+
+
+
+\doxysubsubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_lista_dwukierunkowa_a5171fe8d7617c75381a2021fc73dfd2d}\index{ListaDwukierunkowa@{ListaDwukierunkowa}!ListaDwukierunkowa@{ListaDwukierunkowa}}
+\index{ListaDwukierunkowa@{ListaDwukierunkowa}!ListaDwukierunkowa@{ListaDwukierunkowa}}
+\doxyparagraph{\texorpdfstring{ListaDwukierunkowa()}{ListaDwukierunkowa()}}
+{\footnotesize\ttfamily \label{class_lista_dwukierunkowa_a5171fe8d7617c75381a2021fc73dfd2d} 
+Lista\+Dwukierunkowa\+::\+Lista\+Dwukierunkowa (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor domyslny inicjalizujacy pusta liste. 
+
+
+
+Definition at line \mbox{\hyperlink{_lista_dwukierunkowa_8h_source_l00036}{36}} of file \mbox{\hyperlink{_lista_dwukierunkowa_8h_source}{Lista\+Dwukierunkowa.\+h}}.
+
+\Hypertarget{class_lista_dwukierunkowa_a55ced6c1f79ed8ca34b3f406eeafd547}\index{ListaDwukierunkowa@{ListaDwukierunkowa}!````~ListaDwukierunkowa@{\texorpdfstring{$\sim$}{\string~}ListaDwukierunkowa}}
+\index{````~ListaDwukierunkowa@{\texorpdfstring{$\sim$}{\string~}ListaDwukierunkowa}!ListaDwukierunkowa@{ListaDwukierunkowa}}
+\doxyparagraph{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ListaDwukierunkowa()}{\string~ListaDwukierunkowa()}}
+{\footnotesize\ttfamily \label{class_lista_dwukierunkowa_a55ced6c1f79ed8ca34b3f406eeafd547} 
+Lista\+Dwukierunkowa\+::\texorpdfstring{$\sim$}{\string~}\+Lista\+Dwukierunkowa (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destruktor czyszczacy pamiec przy usuwaniu listy. 
+
+
+
+Definition at line \mbox{\hyperlink{_lista_dwukierunkowa_8h_source_l00041}{41}} of file \mbox{\hyperlink{_lista_dwukierunkowa_8h_source}{Lista\+Dwukierunkowa.\+h}}.
+
+
+
+\doxysubsubsection{Member Function Documentation}
+\Hypertarget{class_lista_dwukierunkowa_a13259af49445d0e841b7db045a65606e}\index{ListaDwukierunkowa@{ListaDwukierunkowa}!dodaj\_na\_index@{dodaj\_na\_index}}
+\index{dodaj\_na\_index@{dodaj\_na\_index}!ListaDwukierunkowa@{ListaDwukierunkowa}}
+\doxyparagraph{\texorpdfstring{dodaj\_na\_index()}{dodaj\_na\_index()}}
+{\footnotesize\ttfamily \label{class_lista_dwukierunkowa_a13259af49445d0e841b7db045a65606e} 
+\mbox{\hyperlink{struct_wezel}{Wezel}} \texorpdfstring{$\ast$}{*} Lista\+Dwukierunkowa\+::dodaj\+\_\+na\+\_\+index (\begin{DoxyParamCaption}\item[{int}]{wartosc}{, }\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Dodaje nowy element na podanym indeksie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wartosc} & Wartosc do dodania. \\
+\hline
+{\em index} & Indeks, na ktorym nalezy dodac nowy element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wskaznik do nowo dodanego wezla, lub nullptr jesli indeks jest nieprawidlowy. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_lista_dwukierunkowa_8cpp_source_l00105}{105}} of file \mbox{\hyperlink{_lista_dwukierunkowa_8cpp_source}{Lista\+Dwukierunkowa.\+cpp}}.
+
+\Hypertarget{class_lista_dwukierunkowa_a67c0c590cf47602a6a47603173752488}\index{ListaDwukierunkowa@{ListaDwukierunkowa}!dodaj\_na\_koniec@{dodaj\_na\_koniec}}
+\index{dodaj\_na\_koniec@{dodaj\_na\_koniec}!ListaDwukierunkowa@{ListaDwukierunkowa}}
+\doxyparagraph{\texorpdfstring{dodaj\_na\_koniec()}{dodaj\_na\_koniec()}}
+{\footnotesize\ttfamily \label{class_lista_dwukierunkowa_a67c0c590cf47602a6a47603173752488} 
+\mbox{\hyperlink{struct_wezel}{Wezel}} \texorpdfstring{$\ast$}{*} Lista\+Dwukierunkowa\+::dodaj\+\_\+na\+\_\+koniec (\begin{DoxyParamCaption}\item[{int}]{wartosc}{}\end{DoxyParamCaption})}
+
+
+
+Dodaje nowy element na koniec listy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wartosc} & Wartosc do dodania na koniec listy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wskaznik do nowo dodanego wezla. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_lista_dwukierunkowa_8cpp_source_l00078}{78}} of file \mbox{\hyperlink{_lista_dwukierunkowa_8cpp_source}{Lista\+Dwukierunkowa.\+cpp}}.
+
+\Hypertarget{class_lista_dwukierunkowa_a2e7e53b547f7898469fd97ff06420cc6}\index{ListaDwukierunkowa@{ListaDwukierunkowa}!dodaj\_na\_poczatek@{dodaj\_na\_poczatek}}
+\index{dodaj\_na\_poczatek@{dodaj\_na\_poczatek}!ListaDwukierunkowa@{ListaDwukierunkowa}}
+\doxyparagraph{\texorpdfstring{dodaj\_na\_poczatek()}{dodaj\_na\_poczatek()}}
+{\footnotesize\ttfamily \label{class_lista_dwukierunkowa_a2e7e53b547f7898469fd97ff06420cc6} 
+\mbox{\hyperlink{struct_wezel}{Wezel}} \texorpdfstring{$\ast$}{*} Lista\+Dwukierunkowa\+::dodaj\+\_\+na\+\_\+poczatek (\begin{DoxyParamCaption}\item[{int}]{wartosc}{}\end{DoxyParamCaption})}
+
+
+
+Dodaje nowy element na poczatek listy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wartosc} & Wartosc do dodania na poczatek listy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wskaznik do nowo dodanego wezla. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_lista_dwukierunkowa_8cpp_source_l00053}{53}} of file \mbox{\hyperlink{_lista_dwukierunkowa_8cpp_source}{Lista\+Dwukierunkowa.\+cpp}}.
+
+\Hypertarget{class_lista_dwukierunkowa_aa8d52ac4714e7d8b0e67b359d04362a7}\index{ListaDwukierunkowa@{ListaDwukierunkowa}!usun\_z\_indexu@{usun\_z\_indexu}}
+\index{usun\_z\_indexu@{usun\_z\_indexu}!ListaDwukierunkowa@{ListaDwukierunkowa}}
+\doxyparagraph{\texorpdfstring{usun\_z\_indexu()}{usun\_z\_indexu()}}
+{\footnotesize\ttfamily \label{class_lista_dwukierunkowa_aa8d52ac4714e7d8b0e67b359d04362a7} 
+void Lista\+Dwukierunkowa\+::usun\+\_\+z\+\_\+indexu (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Usuwa element na podanym indeksie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Indeks elementu do usuniecia. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_lista_dwukierunkowa_8cpp_source_l00178}{178}} of file \mbox{\hyperlink{_lista_dwukierunkowa_8cpp_source}{Lista\+Dwukierunkowa.\+cpp}}.
+
+\Hypertarget{class_lista_dwukierunkowa_a8f743500d8535b64500a2c4ba4aec61e}\index{ListaDwukierunkowa@{ListaDwukierunkowa}!usun\_z\_konca@{usun\_z\_konca}}
+\index{usun\_z\_konca@{usun\_z\_konca}!ListaDwukierunkowa@{ListaDwukierunkowa}}
+\doxyparagraph{\texorpdfstring{usun\_z\_konca()}{usun\_z\_konca()}}
+{\footnotesize\ttfamily \label{class_lista_dwukierunkowa_a8f743500d8535b64500a2c4ba4aec61e} 
+void Lista\+Dwukierunkowa\+::usun\+\_\+z\+\_\+konca (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Usuwa ostatni element z listy. 
+
+
+
+Definition at line \mbox{\hyperlink{_lista_dwukierunkowa_8cpp_source_l00153}{153}} of file \mbox{\hyperlink{_lista_dwukierunkowa_8cpp_source}{Lista\+Dwukierunkowa.\+cpp}}.
+
+\Hypertarget{class_lista_dwukierunkowa_acab869b079247a390aabedb5f05a7944}\index{ListaDwukierunkowa@{ListaDwukierunkowa}!usun\_z\_poczatku@{usun\_z\_poczatku}}
+\index{usun\_z\_poczatku@{usun\_z\_poczatku}!ListaDwukierunkowa@{ListaDwukierunkowa}}
+\doxyparagraph{\texorpdfstring{usun\_z\_poczatku()}{usun\_z\_poczatku()}}
+{\footnotesize\ttfamily \label{class_lista_dwukierunkowa_acab869b079247a390aabedb5f05a7944} 
+void Lista\+Dwukierunkowa\+::usun\+\_\+z\+\_\+poczatku (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Usuwa pierwszy element z listy. 
+
+
+
+Definition at line \mbox{\hyperlink{_lista_dwukierunkowa_8cpp_source_l00130}{130}} of file \mbox{\hyperlink{_lista_dwukierunkowa_8cpp_source}{Lista\+Dwukierunkowa.\+cpp}}.
+
+\Hypertarget{class_lista_dwukierunkowa_ac7a176c913e54b887d7555a0a4a4bdd0}\index{ListaDwukierunkowa@{ListaDwukierunkowa}!wezel@{wezel}}
+\index{wezel@{wezel}!ListaDwukierunkowa@{ListaDwukierunkowa}}
+\doxyparagraph{\texorpdfstring{wezel()}{wezel()}}
+{\footnotesize\ttfamily \label{class_lista_dwukierunkowa_ac7a176c913e54b887d7555a0a4a4bdd0} 
+string Lista\+Dwukierunkowa\+::wezel (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Zwraca wartosc wezla na podanym indeksie jako string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Indeks wezla, ktorego wartosc ma zostac zwrocona. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wartosc wezla jako string, lub pusty string jesli indeks jest nieprawidlowy. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_lista_dwukierunkowa_8cpp_source_l00202}{202}} of file \mbox{\hyperlink{_lista_dwukierunkowa_8cpp_source}{Lista\+Dwukierunkowa.\+cpp}}.
+
+\Hypertarget{class_lista_dwukierunkowa_a07648c95a7fcbcbc3aaaea1121412da2}\index{ListaDwukierunkowa@{ListaDwukierunkowa}!Widok@{Widok}}
+\index{Widok@{Widok}!ListaDwukierunkowa@{ListaDwukierunkowa}}
+\doxyparagraph{\texorpdfstring{Widok()}{Widok()}}
+{\footnotesize\ttfamily \label{class_lista_dwukierunkowa_a07648c95a7fcbcbc3aaaea1121412da2} 
+void Lista\+Dwukierunkowa\+::\+Widok (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Interfejs konsolowy do zarzadzania lista. 
+
+Umozliwia uzytkownikowi wykonywanie operacji na liscie, takich jak dodawanie, usuwanie, czy wyswietlanie elementow. 
+
+Definition at line \mbox{\hyperlink{_lista_dwukierunkowa_8cpp_source_l00224}{224}} of file \mbox{\hyperlink{_lista_dwukierunkowa_8cpp_source}{Lista\+Dwukierunkowa.\+cpp}}.
+
+\Hypertarget{class_lista_dwukierunkowa_af5cf0600d86529d33489cc30f60b8b02}\index{ListaDwukierunkowa@{ListaDwukierunkowa}!wyswietl\_od\_konca@{wyswietl\_od\_konca}}
+\index{wyswietl\_od\_konca@{wyswietl\_od\_konca}!ListaDwukierunkowa@{ListaDwukierunkowa}}
+\doxyparagraph{\texorpdfstring{wyswietl\_od\_konca()}{wyswietl\_od\_konca()}}
+{\footnotesize\ttfamily \label{class_lista_dwukierunkowa_af5cf0600d86529d33489cc30f60b8b02} 
+void Lista\+Dwukierunkowa\+::wyswietl\+\_\+od\+\_\+konca (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Wyswietla elementy listy od konca. 
+
+Wypisuje kazdy element listy zaczynajac od ostatniego elementu. 
+
+Definition at line \mbox{\hyperlink{_lista_dwukierunkowa_8cpp_source_l00032}{32}} of file \mbox{\hyperlink{_lista_dwukierunkowa_8cpp_source}{Lista\+Dwukierunkowa.\+cpp}}.
+
+\Hypertarget{class_lista_dwukierunkowa_a711733314b34696a56148626b0636bc8}\index{ListaDwukierunkowa@{ListaDwukierunkowa}!wyswietl\_od\_poczatku@{wyswietl\_od\_poczatku}}
+\index{wyswietl\_od\_poczatku@{wyswietl\_od\_poczatku}!ListaDwukierunkowa@{ListaDwukierunkowa}}
+\doxyparagraph{\texorpdfstring{wyswietl\_od\_poczatku()}{wyswietl\_od\_poczatku()}}
+{\footnotesize\ttfamily \label{class_lista_dwukierunkowa_a711733314b34696a56148626b0636bc8} 
+void Lista\+Dwukierunkowa\+::wyswietl\+\_\+od\+\_\+poczatku (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Wyswietla elementy listy od poczatku. 
+
+Wypisuje kazdy element listy zaczynajac od pierwszego elementu. 
+
+Definition at line \mbox{\hyperlink{_lista_dwukierunkowa_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{_lista_dwukierunkowa_8cpp_source}{Lista\+Dwukierunkowa.\+cpp}}.
+
+
+
+\doxysubsubsection{Member Data Documentation}
+\Hypertarget{class_lista_dwukierunkowa_a8c12d465b386466c0797f6d65d664ae2}\index{ListaDwukierunkowa@{ListaDwukierunkowa}!ilosc@{ilosc}}
+\index{ilosc@{ilosc}!ListaDwukierunkowa@{ListaDwukierunkowa}}
+\doxyparagraph{\texorpdfstring{ilosc}{ilosc}}
+{\footnotesize\ttfamily \label{class_lista_dwukierunkowa_a8c12d465b386466c0797f6d65d664ae2} 
+int Lista\+Dwukierunkowa\+::ilosc\hspace{0.3cm}{\ttfamily [private]}}
+
+Liczba elementow w liscie. 
+
+Definition at line \mbox{\hyperlink{_lista_dwukierunkowa_8h_source_l00030}{30}} of file \mbox{\hyperlink{_lista_dwukierunkowa_8h_source}{Lista\+Dwukierunkowa.\+h}}.
+
+\Hypertarget{class_lista_dwukierunkowa_a6c2cd8ecc2f0160e7ef5fc7a80278afe}\index{ListaDwukierunkowa@{ListaDwukierunkowa}!koniec@{koniec}}
+\index{koniec@{koniec}!ListaDwukierunkowa@{ListaDwukierunkowa}}
+\doxyparagraph{\texorpdfstring{koniec}{koniec}}
+{\footnotesize\ttfamily \label{class_lista_dwukierunkowa_a6c2cd8ecc2f0160e7ef5fc7a80278afe} 
+\mbox{\hyperlink{struct_wezel}{Wezel}}\texorpdfstring{$\ast$}{*} Lista\+Dwukierunkowa\+::koniec\hspace{0.3cm}{\ttfamily [private]}}
+
+Wskaznik na ostatni element listy. 
+
+Definition at line \mbox{\hyperlink{_lista_dwukierunkowa_8h_source_l00029}{29}} of file \mbox{\hyperlink{_lista_dwukierunkowa_8h_source}{Lista\+Dwukierunkowa.\+h}}.
+
+\Hypertarget{class_lista_dwukierunkowa_a679545eec04e967ddba12353416f8ec6}\index{ListaDwukierunkowa@{ListaDwukierunkowa}!poczatek@{poczatek}}
+\index{poczatek@{poczatek}!ListaDwukierunkowa@{ListaDwukierunkowa}}
+\doxyparagraph{\texorpdfstring{poczatek}{poczatek}}
+{\footnotesize\ttfamily \label{class_lista_dwukierunkowa_a679545eec04e967ddba12353416f8ec6} 
+\mbox{\hyperlink{struct_wezel}{Wezel}}\texorpdfstring{$\ast$}{*} Lista\+Dwukierunkowa\+::poczatek\hspace{0.3cm}{\ttfamily [private]}}
+
+Wskaznik na pierwszy element listy. 
+
+Definition at line \mbox{\hyperlink{_lista_dwukierunkowa_8h_source_l00028}{28}} of file \mbox{\hyperlink{_lista_dwukierunkowa_8h_source}{Lista\+Dwukierunkowa.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Programowanie\+Zaawansowane/\+Zuchowicz\+Dominik.\+Lista\+Dwukierunkowa/\+Example/\+Example/\mbox{\hyperlink{_lista_dwukierunkowa_8h}{Lista\+Dwukierunkowa.\+h}}\item 
+E\+:/\+Programowanie\+Zaawansowane/\+Zuchowicz\+Dominik.\+Lista\+Dwukierunkowa/\+Example/\+Example/\mbox{\hyperlink{_lista_dwukierunkowa_8cpp}{Lista\+Dwukierunkowa.\+cpp}}\end{DoxyCompactItemize}

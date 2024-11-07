@@ -5,14 +5,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ListaDwukierunkowa: ListaDwukierunkowa Class Reference</title>
+<title>Lista dwukierunkowa: ListaDwukierunkowa Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -27,9 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">ListaDwukierunkowa<span id="projectnumber">&#160;v0.1</span>
+   <div id="projectname">Lista dwukierunkowa
    </div>
-   <div id="projectbrief">Lista dwukierunkowa w języku cpp</div>
+   <div id="projectbrief">Impelmentacja listy dwukierunkowej</div>
   </td>
  </tr>
  </tbody>
@@ -52,29 +50,17 @@ $(function() { codefold.init(0); });
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',true,false,'search.php','Search',true);
+  initMenu('',true,false,'search.php','Search',false);
   $(function() { init_search(); });
 });
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('class_lista_dwukierunkowa.html',''); initResizable(true); });
+$(function(){ initResizable(false); });
 /* @license-end */
 </script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -96,6 +82,8 @@ $(function(){initNavTree('class_lista_dwukierunkowa.html',''); initResizable(tru
 </div>
 </div>
 
+</div><!-- top -->
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -104,56 +92,68 @@ $(function(){initNavTree('class_lista_dwukierunkowa.html',''); initResizable(tru
   <div class="headertitle"><div class="title">ListaDwukierunkowa Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Collaboration diagram for ListaDwukierunkowa:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_lista_dwukierunkowa__coll__graph.png" border="0" usemap="#a_lista_dwukierunkowa_coll__map" alt="Collaboration graph"/></div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+
+<p>Klasa reprezentujaca liste dwukierunkowa.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_lista_dwukierunkowa_8h_source.html">ListaDwukierunkowa.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a5171fe8d7617c75381a2021fc73dfd2d" id="r_a5171fe8d7617c75381a2021fc73dfd2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5171fe8d7617c75381a2021fc73dfd2d">ListaDwukierunkowa</a> ()</td></tr>
+<tr class="memdesc:a5171fe8d7617c75381a2021fc73dfd2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor domyslny inicjalizujacy pusta liste.  <br /></td></tr>
+<tr class="separator:a5171fe8d7617c75381a2021fc73dfd2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55ced6c1f79ed8ca34b3f406eeafd547" id="r_a55ced6c1f79ed8ca34b3f406eeafd547"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55ced6c1f79ed8ca34b3f406eeafd547">~ListaDwukierunkowa</a> ()</td></tr>
+<tr class="memdesc:a55ced6c1f79ed8ca34b3f406eeafd547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor czyszczacy pamiec przy usuwaniu listy.  <br /></td></tr>
+<tr class="separator:a55ced6c1f79ed8ca34b3f406eeafd547"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a711733314b34696a56148626b0636bc8" id="r_a711733314b34696a56148626b0636bc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a711733314b34696a56148626b0636bc8">wyswietl_od_poczatku</a> ()</td></tr>
+<tr class="memdesc:a711733314b34696a56148626b0636bc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wyswietla elementy listy od poczatku.  <br /></td></tr>
 <tr class="separator:a711733314b34696a56148626b0636bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5cf0600d86529d33489cc30f60b8b02" id="r_af5cf0600d86529d33489cc30f60b8b02"><td class="memItemLeft" align="right" valign="top"><a id="af5cf0600d86529d33489cc30f60b8b02" name="af5cf0600d86529d33489cc30f60b8b02"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>wyswietl_od_konca</b> ()</td></tr>
+<tr class="memitem:af5cf0600d86529d33489cc30f60b8b02" id="r_af5cf0600d86529d33489cc30f60b8b02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5cf0600d86529d33489cc30f60b8b02">wyswietl_od_konca</a> ()</td></tr>
+<tr class="memdesc:af5cf0600d86529d33489cc30f60b8b02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wyswietla elementy listy od konca.  <br /></td></tr>
 <tr class="separator:af5cf0600d86529d33489cc30f60b8b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b44cc012b2dada32f4c950e6c3d36db" id="r_a1b44cc012b2dada32f4c950e6c3d36db"><td class="memItemLeft" align="right" valign="top"><a id="a1b44cc012b2dada32f4c950e6c3d36db" name="a1b44cc012b2dada32f4c950e6c3d36db"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>dodaj_na_poczatek</b> (int wartosc)</td></tr>
-<tr class="separator:a1b44cc012b2dada32f4c950e6c3d36db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92014def0effaad0544614e70fc0446d" id="r_a92014def0effaad0544614e70fc0446d"><td class="memItemLeft" align="right" valign="top"><a id="a92014def0effaad0544614e70fc0446d" name="a92014def0effaad0544614e70fc0446d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>dodaj_na_koniec</b> (int wartosc)</td></tr>
-<tr class="separator:a92014def0effaad0544614e70fc0446d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a533e76d11b9db76723d9e69779b3e7b4" id="r_a533e76d11b9db76723d9e69779b3e7b4"><td class="memItemLeft" align="right" valign="top"><a id="a533e76d11b9db76723d9e69779b3e7b4" name="a533e76d11b9db76723d9e69779b3e7b4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>dodaj_na_index</b> (int wartosc, int index)</td></tr>
-<tr class="separator:a533e76d11b9db76723d9e69779b3e7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acab869b079247a390aabedb5f05a7944" id="r_acab869b079247a390aabedb5f05a7944"><td class="memItemLeft" align="right" valign="top"><a id="acab869b079247a390aabedb5f05a7944" name="acab869b079247a390aabedb5f05a7944"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>usun_z_poczatku</b> ()</td></tr>
+<tr class="memitem:a2e7e53b547f7898469fd97ff06420cc6" id="r_a2e7e53b547f7898469fd97ff06420cc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_wezel.html">Wezel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e7e53b547f7898469fd97ff06420cc6">dodaj_na_poczatek</a> (int wartosc)</td></tr>
+<tr class="memdesc:a2e7e53b547f7898469fd97ff06420cc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dodaje nowy element na poczatek listy.  <br /></td></tr>
+<tr class="separator:a2e7e53b547f7898469fd97ff06420cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67c0c590cf47602a6a47603173752488" id="r_a67c0c590cf47602a6a47603173752488"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_wezel.html">Wezel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67c0c590cf47602a6a47603173752488">dodaj_na_koniec</a> (int wartosc)</td></tr>
+<tr class="memdesc:a67c0c590cf47602a6a47603173752488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dodaje nowy element na koniec listy.  <br /></td></tr>
+<tr class="separator:a67c0c590cf47602a6a47603173752488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13259af49445d0e841b7db045a65606e" id="r_a13259af49445d0e841b7db045a65606e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_wezel.html">Wezel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13259af49445d0e841b7db045a65606e">dodaj_na_index</a> (int wartosc, int index)</td></tr>
+<tr class="memdesc:a13259af49445d0e841b7db045a65606e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dodaje nowy element na podanym indeksie.  <br /></td></tr>
+<tr class="separator:a13259af49445d0e841b7db045a65606e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acab869b079247a390aabedb5f05a7944" id="r_acab869b079247a390aabedb5f05a7944"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acab869b079247a390aabedb5f05a7944">usun_z_poczatku</a> ()</td></tr>
+<tr class="memdesc:acab869b079247a390aabedb5f05a7944"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usuwa pierwszy element z listy.  <br /></td></tr>
 <tr class="separator:acab869b079247a390aabedb5f05a7944"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f743500d8535b64500a2c4ba4aec61e" id="r_a8f743500d8535b64500a2c4ba4aec61e"><td class="memItemLeft" align="right" valign="top"><a id="a8f743500d8535b64500a2c4ba4aec61e" name="a8f743500d8535b64500a2c4ba4aec61e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>usun_z_konca</b> ()</td></tr>
+<tr class="memitem:a8f743500d8535b64500a2c4ba4aec61e" id="r_a8f743500d8535b64500a2c4ba4aec61e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f743500d8535b64500a2c4ba4aec61e">usun_z_konca</a> ()</td></tr>
+<tr class="memdesc:a8f743500d8535b64500a2c4ba4aec61e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usuwa ostatni element z listy.  <br /></td></tr>
 <tr class="separator:a8f743500d8535b64500a2c4ba4aec61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8d52ac4714e7d8b0e67b359d04362a7" id="r_aa8d52ac4714e7d8b0e67b359d04362a7"><td class="memItemLeft" align="right" valign="top"><a id="aa8d52ac4714e7d8b0e67b359d04362a7" name="aa8d52ac4714e7d8b0e67b359d04362a7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>usun_z_indexu</b> (int index)</td></tr>
+<tr class="memitem:aa8d52ac4714e7d8b0e67b359d04362a7" id="r_aa8d52ac4714e7d8b0e67b359d04362a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8d52ac4714e7d8b0e67b359d04362a7">usun_z_indexu</a> (int index)</td></tr>
+<tr class="memdesc:aa8d52ac4714e7d8b0e67b359d04362a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usuwa element na podanym indeksie.  <br /></td></tr>
 <tr class="separator:aa8d52ac4714e7d8b0e67b359d04362a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25ffae1f75466ded4b3956f193e679a2" id="r_a25ffae1f75466ded4b3956f193e679a2"><td class="memItemLeft" align="right" valign="top"><a id="a25ffae1f75466ded4b3956f193e679a2" name="a25ffae1f75466ded4b3956f193e679a2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>poruszanie_sie_po_liscie</b> ()</td></tr>
-<tr class="separator:a25ffae1f75466ded4b3956f193e679a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7a176c913e54b887d7555a0a4a4bdd0" id="r_ac7a176c913e54b887d7555a0a4a4bdd0"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7a176c913e54b887d7555a0a4a4bdd0">wezel</a> (int index)</td></tr>
+<tr class="memdesc:ac7a176c913e54b887d7555a0a4a4bdd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca wartosc wezla na podanym indeksie jako string.  <br /></td></tr>
+<tr class="separator:ac7a176c913e54b887d7555a0a4a4bdd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07648c95a7fcbcbc3aaaea1121412da2" id="r_a07648c95a7fcbcbc3aaaea1121412da2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07648c95a7fcbcbc3aaaea1121412da2">Widok</a> ()</td></tr>
+<tr class="memdesc:a07648c95a7fcbcbc3aaaea1121412da2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interfejs konsolowy do zarzadzania lista.  <br /></td></tr>
+<tr class="separator:a07648c95a7fcbcbc3aaaea1121412da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a679545eec04e967ddba12353416f8ec6" id="r_a679545eec04e967ddba12353416f8ec6"><td class="memItemLeft" align="right" valign="top"><a id="a679545eec04e967ddba12353416f8ec6" name="a679545eec04e967ddba12353416f8ec6"></a>
-<a class="el" href="struct_wezel.html">Wezel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>poczatek</b></td></tr>
+<tr class="memitem:a679545eec04e967ddba12353416f8ec6" id="r_a679545eec04e967ddba12353416f8ec6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_wezel.html">Wezel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a679545eec04e967ddba12353416f8ec6">poczatek</a></td></tr>
 <tr class="separator:a679545eec04e967ddba12353416f8ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c2cd8ecc2f0160e7ef5fc7a80278afe" id="r_a6c2cd8ecc2f0160e7ef5fc7a80278afe"><td class="memItemLeft" align="right" valign="top"><a id="a6c2cd8ecc2f0160e7ef5fc7a80278afe" name="a6c2cd8ecc2f0160e7ef5fc7a80278afe"></a>
-<a class="el" href="struct_wezel.html">Wezel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>koniec</b></td></tr>
+<tr class="memitem:a6c2cd8ecc2f0160e7ef5fc7a80278afe" id="r_a6c2cd8ecc2f0160e7ef5fc7a80278afe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_wezel.html">Wezel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c2cd8ecc2f0160e7ef5fc7a80278afe">koniec</a></td></tr>
 <tr class="separator:a6c2cd8ecc2f0160e7ef5fc7a80278afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c12d465b386466c0797f6d65d664ae2" id="r_a8c12d465b386466c0797f6d65d664ae2"><td class="memItemLeft" align="right" valign="top"><a id="a8c12d465b386466c0797f6d65d664ae2" name="a8c12d465b386466c0797f6d65d664ae2"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ilosc</b></td></tr>
+<tr class="memitem:a8c12d465b386466c0797f6d65d664ae2" id="r_a8c12d465b386466c0797f6d65d664ae2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c12d465b386466c0797f6d65d664ae2">ilosc</a></td></tr>
 <tr class="separator:a8c12d465b386466c0797f6d65d664ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a711733314b34696a56148626b0636bc8" name="a711733314b34696a56148626b0636bc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a711733314b34696a56148626b0636bc8">&#9670;&#160;</a></span>wyswietl_od_poczatku()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Klasa reprezentujaca liste dwukierunkowa. </p>
+<p>Zapewnia metody do dodawania, usuwania i wyswietlania elementow listy. </p>
+
+<p class="definition">Definition at line <a class="el" href="_lista_dwukierunkowa_8h_source.html#l00026">26</a> of file <a class="el" href="_lista_dwukierunkowa_8h_source.html">ListaDwukierunkowa.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a5171fe8d7617c75381a2021fc73dfd2d" name="a5171fe8d7617c75381a2021fc73dfd2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5171fe8d7617c75381a2021fc73dfd2d">&#9670;&#160;</a></span>ListaDwukierunkowa()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,7 +162,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ilosc</b></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void ListaDwukierunkowa::wyswietl_od_poczatku </td>
+          <td class="memname">ListaDwukierunkowa::ListaDwukierunkowa </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -174,21 +174,380 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ilosc</b></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>wyświetlanie listy </p>
+
+<p>Konstruktor domyslny inicjalizujacy pusta liste. </p>
+
+<p class="definition">Definition at line <a class="el" href="_lista_dwukierunkowa_8h_source.html#l00036">36</a> of file <a class="el" href="_lista_dwukierunkowa_8h_source.html">ListaDwukierunkowa.h</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>E:/ProgramowanieZaawansowane/ZuchowiczDominik.ListaDwukierunkowa/Example/Example/<b>Example.cpp</b></li>
+<a id="a55ced6c1f79ed8ca34b3f406eeafd547" name="a55ced6c1f79ed8ca34b3f406eeafd547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55ced6c1f79ed8ca34b3f406eeafd547">&#9670;&#160;</a></span>~ListaDwukierunkowa()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ListaDwukierunkowa::~ListaDwukierunkowa </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destruktor czyszczacy pamiec przy usuwaniu listy. </p>
+
+<p class="definition">Definition at line <a class="el" href="_lista_dwukierunkowa_8h_source.html#l00041">41</a> of file <a class="el" href="_lista_dwukierunkowa_8h_source.html">ListaDwukierunkowa.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a13259af49445d0e841b7db045a65606e" name="a13259af49445d0e841b7db045a65606e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13259af49445d0e841b7db045a65606e">&#9670;&#160;</a></span>dodaj_na_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_wezel.html">Wezel</a> * ListaDwukierunkowa::dodaj_na_index </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>wartosc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dodaje nowy element na podanym indeksie. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wartosc</td><td>Wartosc do dodania. </td></tr>
+    <tr><td class="paramname">index</td><td>Indeks, na ktorym nalezy dodac nowy element. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Wskaznik do nowo dodanego wezla, lub nullptr jesli indeks jest nieprawidlowy. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_lista_dwukierunkowa_8cpp_source.html#l00105">105</a> of file <a class="el" href="_lista_dwukierunkowa_8cpp_source.html">ListaDwukierunkowa.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a67c0c590cf47602a6a47603173752488" name="a67c0c590cf47602a6a47603173752488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67c0c590cf47602a6a47603173752488">&#9670;&#160;</a></span>dodaj_na_koniec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_wezel.html">Wezel</a> * ListaDwukierunkowa::dodaj_na_koniec </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>wartosc</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dodaje nowy element na koniec listy. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wartosc</td><td>Wartosc do dodania na koniec listy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Wskaznik do nowo dodanego wezla. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_lista_dwukierunkowa_8cpp_source.html#l00078">78</a> of file <a class="el" href="_lista_dwukierunkowa_8cpp_source.html">ListaDwukierunkowa.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2e7e53b547f7898469fd97ff06420cc6" name="a2e7e53b547f7898469fd97ff06420cc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e7e53b547f7898469fd97ff06420cc6">&#9670;&#160;</a></span>dodaj_na_poczatek()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_wezel.html">Wezel</a> * ListaDwukierunkowa::dodaj_na_poczatek </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>wartosc</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dodaje nowy element na poczatek listy. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wartosc</td><td>Wartosc do dodania na poczatek listy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Wskaznik do nowo dodanego wezla. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_lista_dwukierunkowa_8cpp_source.html#l00053">53</a> of file <a class="el" href="_lista_dwukierunkowa_8cpp_source.html">ListaDwukierunkowa.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa8d52ac4714e7d8b0e67b359d04362a7" name="aa8d52ac4714e7d8b0e67b359d04362a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8d52ac4714e7d8b0e67b359d04362a7">&#9670;&#160;</a></span>usun_z_indexu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ListaDwukierunkowa::usun_z_indexu </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Usuwa element na podanym indeksie. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Indeks elementu do usuniecia. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_lista_dwukierunkowa_8cpp_source.html#l00178">178</a> of file <a class="el" href="_lista_dwukierunkowa_8cpp_source.html">ListaDwukierunkowa.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8f743500d8535b64500a2c4ba4aec61e" name="a8f743500d8535b64500a2c4ba4aec61e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f743500d8535b64500a2c4ba4aec61e">&#9670;&#160;</a></span>usun_z_konca()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ListaDwukierunkowa::usun_z_konca </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Usuwa ostatni element z listy. </p>
+
+<p class="definition">Definition at line <a class="el" href="_lista_dwukierunkowa_8cpp_source.html#l00153">153</a> of file <a class="el" href="_lista_dwukierunkowa_8cpp_source.html">ListaDwukierunkowa.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acab869b079247a390aabedb5f05a7944" name="acab869b079247a390aabedb5f05a7944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acab869b079247a390aabedb5f05a7944">&#9670;&#160;</a></span>usun_z_poczatku()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ListaDwukierunkowa::usun_z_poczatku </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Usuwa pierwszy element z listy. </p>
+
+<p class="definition">Definition at line <a class="el" href="_lista_dwukierunkowa_8cpp_source.html#l00130">130</a> of file <a class="el" href="_lista_dwukierunkowa_8cpp_source.html">ListaDwukierunkowa.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac7a176c913e54b887d7555a0a4a4bdd0" name="ac7a176c913e54b887d7555a0a4a4bdd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7a176c913e54b887d7555a0a4a4bdd0">&#9670;&#160;</a></span>wezel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string ListaDwukierunkowa::wezel </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zwraca wartosc wezla na podanym indeksie jako string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Indeks wezla, ktorego wartosc ma zostac zwrocona. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Wartosc wezla jako string, lub pusty string jesli indeks jest nieprawidlowy. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_lista_dwukierunkowa_8cpp_source.html#l00202">202</a> of file <a class="el" href="_lista_dwukierunkowa_8cpp_source.html">ListaDwukierunkowa.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a07648c95a7fcbcbc3aaaea1121412da2" name="a07648c95a7fcbcbc3aaaea1121412da2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07648c95a7fcbcbc3aaaea1121412da2">&#9670;&#160;</a></span>Widok()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ListaDwukierunkowa::Widok </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interfejs konsolowy do zarzadzania lista. </p>
+<p>Umozliwia uzytkownikowi wykonywanie operacji na liscie, takich jak dodawanie, usuwanie, czy wyswietlanie elementow. </p>
+
+<p class="definition">Definition at line <a class="el" href="_lista_dwukierunkowa_8cpp_source.html#l00224">224</a> of file <a class="el" href="_lista_dwukierunkowa_8cpp_source.html">ListaDwukierunkowa.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af5cf0600d86529d33489cc30f60b8b02" name="af5cf0600d86529d33489cc30f60b8b02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5cf0600d86529d33489cc30f60b8b02">&#9670;&#160;</a></span>wyswietl_od_konca()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ListaDwukierunkowa::wyswietl_od_konca </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wyswietla elementy listy od konca. </p>
+<p>Wypisuje kazdy element listy zaczynajac od ostatniego elementu. </p>
+
+<p class="definition">Definition at line <a class="el" href="_lista_dwukierunkowa_8cpp_source.html#l00032">32</a> of file <a class="el" href="_lista_dwukierunkowa_8cpp_source.html">ListaDwukierunkowa.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a711733314b34696a56148626b0636bc8" name="a711733314b34696a56148626b0636bc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a711733314b34696a56148626b0636bc8">&#9670;&#160;</a></span>wyswietl_od_poczatku()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ListaDwukierunkowa::wyswietl_od_poczatku </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wyswietla elementy listy od poczatku. </p>
+<p>Wypisuje kazdy element listy zaczynajac od pierwszego elementu. </p>
+
+<p class="definition">Definition at line <a class="el" href="_lista_dwukierunkowa_8cpp_source.html#l00012">12</a> of file <a class="el" href="_lista_dwukierunkowa_8cpp_source.html">ListaDwukierunkowa.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8c12d465b386466c0797f6d65d664ae2" name="a8c12d465b386466c0797f6d65d664ae2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c12d465b386466c0797f6d65d664ae2">&#9670;&#160;</a></span>ilosc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ListaDwukierunkowa::ilosc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Liczba elementow w liscie. </p>
+
+<p class="definition">Definition at line <a class="el" href="_lista_dwukierunkowa_8h_source.html#l00030">30</a> of file <a class="el" href="_lista_dwukierunkowa_8h_source.html">ListaDwukierunkowa.h</a>.</p>
+
+</div>
+</div>
+<a id="a6c2cd8ecc2f0160e7ef5fc7a80278afe" name="a6c2cd8ecc2f0160e7ef5fc7a80278afe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c2cd8ecc2f0160e7ef5fc7a80278afe">&#9670;&#160;</a></span>koniec</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_wezel.html">Wezel</a>* ListaDwukierunkowa::koniec</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Wskaznik na ostatni element listy. </p>
+
+<p class="definition">Definition at line <a class="el" href="_lista_dwukierunkowa_8h_source.html#l00029">29</a> of file <a class="el" href="_lista_dwukierunkowa_8h_source.html">ListaDwukierunkowa.h</a>.</p>
+
+</div>
+</div>
+<a id="a679545eec04e967ddba12353416f8ec6" name="a679545eec04e967ddba12353416f8ec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a679545eec04e967ddba12353416f8ec6">&#9670;&#160;</a></span>poczatek</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_wezel.html">Wezel</a>* ListaDwukierunkowa::poczatek</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Wskaznik na pierwszy element listy. </p>
+
+<p class="definition">Definition at line <a class="el" href="_lista_dwukierunkowa_8h_source.html#l00028">28</a> of file <a class="el" href="_lista_dwukierunkowa_8h_source.html">ListaDwukierunkowa.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>E:/ProgramowanieZaawansowane/ZuchowiczDominik.ListaDwukierunkowa/Example/Example/<a class="el" href="_lista_dwukierunkowa_8h_source.html">ListaDwukierunkowa.h</a></li>
+<li>E:/ProgramowanieZaawansowane/ZuchowiczDominik.ListaDwukierunkowa/Example/Example/<a class="el" href="_lista_dwukierunkowa_8cpp_source.html">ListaDwukierunkowa.cpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="class_lista_dwukierunkowa.html">ListaDwukierunkowa</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
 </body>
 </html>

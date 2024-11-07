@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{B4B62A16-CBF6-4EE2-953C-B7C47ED054BE}|Example\\Example.vcxproj|solutionrelative:Example\\ListaDwukierunkowa.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4B62A16-CBF6-4EE2-953C-B7C47ED054BE}|Example\\Example.vcxproj|E:\\ProgramowanieZaawansowane\\ZuchowiczDominik.ListaDwukierunkowa\\Example\\Example\\Example.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B4B62A16-CBF6-4EE2-953C-B7C47ED054BE}|Example\\Example.vcxproj|solutionrelative:Example\\Example.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4B62A16-CBF6-4EE2-953C-B7C47ED054BE}|Example\\Example.vcxproj|E:\\ProgramowanieZaawansowane\\ZuchowiczDominik.ListaDwukierunkowa\\Example\\Example\\ListaDwukierunkowa.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B4B62A16-CBF6-4EE2-953C-B7C47ED054BE}|Example\\Example.vcxproj|solutionrelative:Example\\ListaDwukierunkowa.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4B62A16-CBF6-4EE2-953C-B7C47ED054BE}|Example\\Example.vcxproj|E:\\ProgramowanieZaawansowane\\ZuchowiczDominik.ListaDwukierunkowa\\Example\\Example\\Example.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B4B62A16-CBF6-4EE2-953C-B7C47ED054BE}|Example\\Example.vcxproj|solutionrelative:Example\\Example.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,20 +36,20 @@
               "RelativeDocumentMoniker": "Example\\ListaDwukierunkowa.h",
               "ToolTip": "E:\\ProgramowanieZaawansowane\\ZuchowiczDominik.ListaDwukierunkowa\\Example\\Example\\ListaDwukierunkowa.h",
               "RelativeToolTip": "Example\\ListaDwukierunkowa.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-07T16:09:50.388Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Example.cpp",
               "DocumentMoniker": "E:\\ProgramowanieZaawansowane\\ZuchowiczDominik.ListaDwukierunkowa\\Example\\Example\\Example.cpp",
               "RelativeDocumentMoniker": "Example\\Example.cpp",
               "ToolTip": "E:\\ProgramowanieZaawansowane\\ZuchowiczDominik.ListaDwukierunkowa\\Example\\Example\\Example.cpp",
               "RelativeToolTip": "Example\\Example.cpp",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-11T10:44:47.474Z",
               "EditorCaption": ""
@@ -62,13 +62,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ListaDwukierunkowa.cpp",
               "DocumentMoniker": "E:\\ProgramowanieZaawansowane\\ZuchowiczDominik.ListaDwukierunkowa\\Example\\Example\\ListaDwukierunkowa.cpp",
               "RelativeDocumentMoniker": "Example\\ListaDwukierunkowa.cpp",
               "ToolTip": "E:\\ProgramowanieZaawansowane\\ZuchowiczDominik.ListaDwukierunkowa\\Example\\Example\\ListaDwukierunkowa.cpp",
               "RelativeToolTip": "Example\\ListaDwukierunkowa.cpp",
-              "ViewState": "AgIAALQAAAAAAAAAAAAAAN0AAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-07T16:10:15.725Z",
               "EditorCaption": ""

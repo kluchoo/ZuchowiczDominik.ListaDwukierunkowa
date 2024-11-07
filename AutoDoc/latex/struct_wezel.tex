@@ -1,23 +1,89 @@
-\doxysection{Wezel Struct Reference}
+\doxysubsection{Wezel Struct Reference}
 \hypertarget{struct_wezel}{}\label{struct_wezel}\index{Wezel@{Wezel}}
 
 
-Collaboration diagram for Wezel\+:
-% FIG 0
-\doxysubsubsection*{Public Attributes}
+Struktura reprezentujaca pojedynczy wezel listy dwukierunkowej.  
+
+
+
+
+{\ttfamily \#include $<$Lista\+Dwukierunkowa.\+h$>$}
+
+\doxysubsubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{struct_wezel_a3e4f9621d8e9ae3f361e84ecd1700315}\label{struct_wezel_a3e4f9621d8e9ae3f361e84ecd1700315} 
-int {\bfseries dane} = 0
+\mbox{\hyperlink{struct_wezel_a4b0f983c449278e4285687fdcddb5415}{Wezel}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny inicjalizujacy pola wezla. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
 \item 
-\Hypertarget{struct_wezel_ae656db8e9a2d90bcc6cd46338f7b9409}\label{struct_wezel_ae656db8e9a2d90bcc6cd46338f7b9409} 
-\mbox{\hyperlink{struct_wezel}{Wezel}} \texorpdfstring{$\ast$}{*} {\bfseries nastepny} = nullptr
+int \mbox{\hyperlink{struct_wezel_a3e4f9621d8e9ae3f361e84ecd1700315}{dane}}
 \item 
-\Hypertarget{struct_wezel_a9f3b9a0ff4eb7a078334d7c1f40fa155}\label{struct_wezel_a9f3b9a0ff4eb7a078334d7c1f40fa155} 
-\mbox{\hyperlink{struct_wezel}{Wezel}} \texorpdfstring{$\ast$}{*} {\bfseries poprzedni} = nullptr
+\mbox{\hyperlink{struct_wezel}{Wezel}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_wezel_ae656db8e9a2d90bcc6cd46338f7b9409}{nastepny}}
+\item 
+\mbox{\hyperlink{struct_wezel}{Wezel}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_wezel_a9f3b9a0ff4eb7a078334d7c1f40fa155}{poprzedni}}
 \end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Detailed Description}
+Struktura reprezentujaca pojedynczy wezel listy dwukierunkowej. 
+
+Kazdy wezel zawiera dane oraz wskazniki na nastepny i poprzedni element listy. 
+
+Definition at line \mbox{\hyperlink{_lista_dwukierunkowa_8h_source_l00010}{10}} of file \mbox{\hyperlink{_lista_dwukierunkowa_8h_source}{Lista\+Dwukierunkowa.\+h}}.
+
+
+
+\doxysubsubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_wezel_a4b0f983c449278e4285687fdcddb5415}\index{Wezel@{Wezel}!Wezel@{Wezel}}
+\index{Wezel@{Wezel}!Wezel@{Wezel}}
+\doxyparagraph{\texorpdfstring{Wezel()}{Wezel()}}
+{\footnotesize\ttfamily \label{struct_wezel_a4b0f983c449278e4285687fdcddb5415} 
+Wezel\+::\+Wezel (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor domyslny inicjalizujacy pola wezla. 
+
+
+
+Definition at line \mbox{\hyperlink{_lista_dwukierunkowa_8h_source_l00018}{18}} of file \mbox{\hyperlink{_lista_dwukierunkowa_8h_source}{Lista\+Dwukierunkowa.\+h}}.
+
+
+
+\doxysubsubsection{Member Data Documentation}
+\Hypertarget{struct_wezel_a3e4f9621d8e9ae3f361e84ecd1700315}\index{Wezel@{Wezel}!dane@{dane}}
+\index{dane@{dane}!Wezel@{Wezel}}
+\doxyparagraph{\texorpdfstring{dane}{dane}}
+{\footnotesize\ttfamily \label{struct_wezel_a3e4f9621d8e9ae3f361e84ecd1700315} 
+int Wezel\+::dane}
+
+Wartosc przechowywana w wezle. 
+
+Definition at line \mbox{\hyperlink{_lista_dwukierunkowa_8h_source_l00011}{11}} of file \mbox{\hyperlink{_lista_dwukierunkowa_8h_source}{Lista\+Dwukierunkowa.\+h}}.
+
+\Hypertarget{struct_wezel_ae656db8e9a2d90bcc6cd46338f7b9409}\index{Wezel@{Wezel}!nastepny@{nastepny}}
+\index{nastepny@{nastepny}!Wezel@{Wezel}}
+\doxyparagraph{\texorpdfstring{nastepny}{nastepny}}
+{\footnotesize\ttfamily \label{struct_wezel_ae656db8e9a2d90bcc6cd46338f7b9409} 
+\mbox{\hyperlink{struct_wezel}{Wezel}}\texorpdfstring{$\ast$}{*} Wezel\+::nastepny}
+
+Wskaznik na nastepny element listy. 
+
+Definition at line \mbox{\hyperlink{_lista_dwukierunkowa_8h_source_l00012}{12}} of file \mbox{\hyperlink{_lista_dwukierunkowa_8h_source}{Lista\+Dwukierunkowa.\+h}}.
+
+\Hypertarget{struct_wezel_a9f3b9a0ff4eb7a078334d7c1f40fa155}\index{Wezel@{Wezel}!poprzedni@{poprzedni}}
+\index{poprzedni@{poprzedni}!Wezel@{Wezel}}
+\doxyparagraph{\texorpdfstring{poprzedni}{poprzedni}}
+{\footnotesize\ttfamily \label{struct_wezel_a9f3b9a0ff4eb7a078334d7c1f40fa155} 
+\mbox{\hyperlink{struct_wezel}{Wezel}}\texorpdfstring{$\ast$}{*} Wezel\+::poprzedni}
+
+Wskaznik na poprzedni element listy. 
+
+Definition at line \mbox{\hyperlink{_lista_dwukierunkowa_8h_source_l00013}{13}} of file \mbox{\hyperlink{_lista_dwukierunkowa_8h_source}{Lista\+Dwukierunkowa.\+h}}.
+
 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-E\+:/\+Programowanie\+Zaawansowane/\+Zuchowicz\+Dominik.\+Lista\+Dwukierunkowa/\+Example/\+Example/Example.\+cpp\end{DoxyCompactItemize}
+E\+:/\+Programowanie\+Zaawansowane/\+Zuchowicz\+Dominik.\+Lista\+Dwukierunkowa/\+Example/\+Example/\mbox{\hyperlink{_lista_dwukierunkowa_8h}{Lista\+Dwukierunkowa.\+h}}\end{DoxyCompactItemize}
