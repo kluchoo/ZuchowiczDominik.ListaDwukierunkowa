@@ -3,11 +3,11 @@
 #include <string>
 
 
-	/**
-
-	wyœwietlanie listy
-
-	**/
+/**
+* @brief Wyœwietla elementy listy od pocz¹tku.
+*
+* Wypisuje ka¿dy element listy zaczynaj¹c od pierwszego elementu.
+*/
 
 	void ListaDwukierunkowa::wyswietl_od_poczatku() {
 		if (!koniec) {}
@@ -23,6 +23,12 @@
 		}
 	}
 
+	/**
+ * @brief Wyœwietla elementy listy od koñca.
+ *
+ * Wypisuje ka¿dy element listy zaczynaj¹c od ostatniego elementu.
+ */
+
 	void ListaDwukierunkowa::wyswietl_od_konca() {
 		if (!koniec) {}
 		else {
@@ -37,11 +43,12 @@
 		}
 	}
 
-	/*
-
-	Dodawanie elementów
-
-	*/
+	/**
+ * @brief Dodaje nowy element na pocz¹tek listy.
+ *
+ * @param wartosc Wartoœæ do dodania na pocz¹tek listy.
+ * @return WskaŸnik do nowo dodanego wêz³a.
+ */
 
 	Wezel* ListaDwukierunkowa::dodaj_na_poczatek(int wartosc) {
 		Wezel* nowyWezel = new Wezel;
@@ -60,6 +67,14 @@
 		ilosc++;
 		return nowyWezel;
 	}
+
+	/**
+ * @brief Dodaje nowy element na koniec listy.
+ *
+ * @param wartosc Wartoœæ do dodania na koniec listy.
+ * @return WskaŸnik do nowo dodanego wêz³a.
+ */
+
 	Wezel* ListaDwukierunkowa::dodaj_na_koniec(int wartosc) {
 		Wezel* nowyWezel = new Wezel;
 		if (!koniec) {
@@ -78,9 +93,15 @@
 		return nowyWezel;
 	}
 
-	/*
-	@Brief walidacja dodana!!
-	*/
+
+	/**
+	 * @brief Dodaje nowy element na podanym indeksie.
+	 *
+	 * @param wartosc Wartoœæ do dodania.
+	 * @param index Indeks, na którym nale¿y dodaæ nowy element.
+	 * @return WskaŸnik do nowo dodanego wêz³a, lub nullptr jeœli indeks jest nieprawid³owy.
+	 */
+
 	Wezel* ListaDwukierunkowa::dodaj_na_index(int wartosc, int index) {
 		if (index > 0 && index < ilosc - 1) {
 			Wezel* nowyWezel = new Wezel;
@@ -102,11 +123,9 @@
 		else cout << "Index poza list¹";
 	}
 
-	/*
-
-	Usuwanie elementów
-
-	*/
+	/**
+	 * @brief Usuwa pierwszy element z listy.
+	 */
 
 	void ListaDwukierunkowa::usun_z_poczatku() {
 		if (ilosc == 0) {
@@ -128,6 +147,9 @@
 
 		ilosc--;
 	}
+	/**
+ * @brief Usuwa ostatni element z listy.
+ */
 	void ListaDwukierunkowa::usun_z_konca() {
 		if (ilosc == 0) {
 			cout << "brak elementow\n";
@@ -146,6 +168,13 @@
 		}
 		ilosc--;
 	}
+
+	/**
+ * @brief Usuwa element na podanym indeksie.
+ *
+ * @param index Indeks elementu do usuniêcia.
+ */
+
 	void ListaDwukierunkowa::usun_z_indexu(int index) {
 		if (index > 0 && index < ilosc - 1) {
 			Wezel* wskaznik = poczatek;
@@ -163,6 +192,13 @@
 
 	}
 
+	/**
+ * @brief Zwraca wartoœæ wêz³a na podanym indeksie jako string.
+ *
+ * @param index Indeks wêz³a, którego wartoœæ ma zostaæ zwrócona.
+ * @return Wartoœæ wêz³a jako string, lub pusty string jeœli indeks jest nieprawid³owy.
+ */
+
 	string ListaDwukierunkowa::wezel(int index) {
 		if (poczatek == nullptr) return "";
 		if (index == -1) return "";
@@ -178,6 +214,13 @@
 		if (wskaznik != nullptr) return to_string(wskaznik->dane);
 
 	}
+
+	/**
+ * @brief Interfejs konsolowy do zarz¹dzania list¹.
+ *
+ * Umo¿liwia u¿ytkownikowi wykonywanie operacji na liœcie, takich jak dodawanie, usuwanie, czy wyœwietlanie elementów.
+ */
+
 	void ListaDwukierunkowa::Widok() {
 
 		int wybrany_index = 0, komenda = 0, wartosc = 0, wartosc2 = 0, widok = 0;
