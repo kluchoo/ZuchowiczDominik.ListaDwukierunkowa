@@ -8,5 +8,5 @@ int main()
 {
 	ListaDwukierunkowa lista;
 	lista.Widok();
-
+	//Commit z drugiej lokalizacji
 }
