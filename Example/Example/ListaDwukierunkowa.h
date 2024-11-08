@@ -109,3 +109,5 @@ public:
 
     void WyczyscListe();
 };
+
+//commit do usuniêcia
